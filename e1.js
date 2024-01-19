@@ -12,7 +12,7 @@
             paintCells(row, col);
 
             // Actualizar la interfaz gráfica
-            updateUI();
+            update();
 
             
         }
@@ -42,7 +42,7 @@
             return row >= 0 && row < rows && col >= 0 && col < cols;
         }
 
-        function updateUI() {
+        function update() {
             // Actualizar la interfaz gráfica según el estado del tablero
             for (let i = 0; i < rows; i++) {
                 for (let j = 0; j < cols; j++) {
@@ -61,4 +61,8 @@
 
 //esta es la funcion espejo
 
-  
+  function espejo(row,col){
+    espejo = espejo(7-row,7-col)
+  }
+
+
